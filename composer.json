@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "jms/serializer": "^1.7",
+        "jms/serializer": "dev-bug-fix",
         "phpoption/phpoption": "^1.1.0",
         "symfony/framework-bundle": "~2.3|~3.0"
     },
@@ -37,6 +37,24 @@
         "symfony/validator": "*",
         "symfony/stopwatch": "*"
     },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "version":"dev-bug-fix",
+                "name": "jms/serializer",
+                "source": {
+                    "url": "https://github.com/naikok/serializer.git",
+                    "type": "git",
+                    "reference": "bug-fix"
+                },
+                "dist": {
+                    "url": "https://github.com/naikok/serializer/archive/bug-fix.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ],
     "suggest": {
         "jms/di-extra-bundle": "Required to get lazy loading (de)serialization visitors, ~1.3"
     },
