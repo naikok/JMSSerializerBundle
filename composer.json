@@ -1,5 +1,6 @@
 {
     "name": "jms/serializer-bundle",
+    "version": "5.0.0",
     "type": "symfony-bundle",
     "description": "Allows you to easily serialize, and deserialize data of any complexity",
     "keywords": ["serialization", "deserialization", "json", "jaxb", "xml"],
@@ -17,7 +18,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "jms/serializer": "dev-bug-fix",
+        "jms/serializer": "^5.0",
         "phpoption/phpoption": "^1.1.0",
         "symfony/framework-bundle": "~2.3|~3.0"
     },
@@ -39,20 +40,8 @@
     },
     "repositories": [
         {
-            "type": "package",
-            "package": {
-                "version":"dev-bug-fix",
-                "name": "jms/serializer",
-                "source": {
-                    "url": "https://github.com/naikok/serializer.git",
-                    "type": "git",
-                    "reference": "bug-fix"
-                },
-                "dist": {
-                    "url": "https://github.com/naikok/serializer/archive/bug-fix.zip",
-                    "type": "zip"
-                }
-            }
+            "type": "vcs",
+            "url": "https://github.com/naikok/serializer.git" 
         }
     ],
     "suggest": {
